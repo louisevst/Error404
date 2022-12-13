@@ -1,0 +1,82 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom:30px;
+}
+.wallpaper{
+    background: url("Wallpaper.svg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: grayscale(90%);
+}
+.container{
+    position: relative;
+    left: 10%;
+    top: 30%;
+    margin: 30px;
+    padding: 10px;
+    max-width: 80%;
+}
+.error{
+    position: absolute;
+    z-index: -1;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-size: 250px;
+    margin: -100px -200px 0 -50px;
+    letter-spacing: 10px;
+    background-color: #050826;
+    background-image: linear-gradient(0deg, #050826, #6c6c6c);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    filter: blur(2px);
+}
+button{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 570px){
+    .container{
+        left:2%;
+        top:20%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 20px;
+    }
+    .error{
+        margin-top: 10px;
+        margin-left: 10px;;
+        font-size: 150px;
+
+    }
+
+}
+@media only screen and (max-width: 280px){
+
+    .error{
+        font-size: 100px;
+        margin-left: -10px;
+    }
+
+}
